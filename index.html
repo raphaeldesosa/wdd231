@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd231</title>
+    <title>WDD 231 - Raphael De Sosa</title>
+    <meta name="description" content="Course home page">
+    <meta name="author" content="Raphael De Sosa">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/home.js" defer></script>
 </head>
 <body>
-    <h1>Hello World - Raphael De Sosa test</h1>
+    <header>
+        <div class="header-content">
+            <img src="images/profile-image.webp" alt="Raphael De Sosa Profile" class="profile-img">
+            <h1>Raphael De Sosa</h1>
+        </div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">GitHub Profile</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle navigation">☰</button>
+        </nav>
+    </header>  
+    <main>
+        <section class="coursework">
+            <h2>Course Work</h2>
+            <ul id ="coursework">
+            </ul>
+        </section>
+        
+        <section class="location">
+            <h2>Zamboanga City, Philippines</h2>
+            <img src="images/Vinta.webp" alt="Vinta" class="location-image">
+            <p>Vinta of Zamboanga</p>
+        </section>
+
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button id="allCourses">All</button>
+                <button id="cseCourses">CSE</button>
+                <button id="wddCourses">WDD</button>
+            </div>
+            <p>Total Credits Required: <span id="total-credits"></span></p>
+            <div id="courseCards"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>©<span id="currentyear">2024</span> Raphael De Sosa, Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
+
+<!--This is an html comment-->
