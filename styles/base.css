@@ -214,6 +214,7 @@ footer p {
 
     .coursework, .location, .certificate {
         width: 100%;
+        grid-column: 1/ -1;
     }
 
     .filter-buttons {
@@ -228,6 +229,7 @@ footer p {
 
     .courseCards {
         flex-direction: column;
+        align-items: center;
     }
 
     .course-cards .course-card {
