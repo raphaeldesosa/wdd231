@@ -180,6 +180,10 @@ h2 {
     gap: 16px; 
 }
 
+.hamburger {
+    display: none;
+}
+
 .course-card h3 {
     text-align: center;
 }
@@ -246,5 +250,15 @@ footer p {
 
     #nav-links li {
         margin: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
     }
 }
