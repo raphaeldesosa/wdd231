@@ -208,6 +208,10 @@ footer p {
 
 
 @media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    
     .filter-buttons {
         flex-direction: column;
     }
