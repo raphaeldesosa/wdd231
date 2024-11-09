@@ -114,6 +114,7 @@ h2 {
 
 .location {
     text-align: center;
+    min-height: 320px;
 }
 
 .location img {
