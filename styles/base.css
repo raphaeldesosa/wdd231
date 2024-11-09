@@ -209,12 +209,12 @@ footer p {
 
 @media (max-width: 768px) {
     main {
-        grid-template-columns: 1fr;
+        display: block;
     }
 
     .coursework, .location, .certificate {
         width: 100%;
-        grid-column: 1/ -1;
+        margin: 0 auto;
     }
 
     .filter-buttons {
