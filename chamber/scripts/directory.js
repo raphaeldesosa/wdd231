@@ -4,6 +4,7 @@ document.getElementById('currentyear').textContent = currentyear;
 let lastModified = new Date(document.lastModified);
 document.getElementById('lastModified').textContent = `Last Update: ${lastModified}`;
 
+
 async function FetchandDisplayMembers() {
     try {
         const response = await fetch('data/members.json');
@@ -50,3 +51,9 @@ function toggleView(){
 FetchandDisplayMembers();
 document.getElementById('toggleView').addEventListener('click', toggleView);
 
+const myButton = document.getElementById('myButton');
+const menuLinks = document.querySelector('nav .menuLinks');
+
+myButton.addEventListener('click', () => {
+    menuLinks.classList.toggle('hidden')
+})
