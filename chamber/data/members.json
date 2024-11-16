@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Pacific Trading Co.",
+        "address": "123 Rizal Ave, Zamboanga City",
+        "phone": "+63 62 123 4567",
+        "website": "https://www.pacifictrading.com",
+        "image": "pacific_trading_logo.png",
+        "membership_level": 3
+    },
+    {
+        "name": "Mindanao Ventures Inc.",
+        "address": "456 Veterans Ave, Zamboanga City",
+        "phone": "+63 62 765 4321",
+        "website": "https://www.mindanaoventures.com",
+        "image": "mindanao_ventures_logo.png",
+        "membership_level": 2
+    },
+    {
+        "name": "Zamboanga Coffee Co.",
+        "address": "789 San Jose Rd, Zamboanga City",
+        "phone": "+63 62 234 5678",
+        "website": "https://www.zamboangacoffee.com",
+        "image": "zamboanga_coffee_logo.png",
+        "membership_level": 1
+    },
+    {
+        "name": "Bayan Health Services",
+        "address": "321 Gov. Camins Ave, Zamboanga City",
+        "phone": "+63 62 876 5432",
+        "website": "https://www.bayanhealth.com",
+        "image": "bayan_health_logo.png",
+        "membership_level": 3
+    },
+    {
+        "name": "Zamboanga Marine Supply",
+        "address": "234 Pilar St, Zamboanga City",
+        "phone": "+63 62 345 6789",
+        "website": "https://www.zamboangamarine.com",
+        "image": "zamboanga_marine_logo.png",
+        "membership_level": 2
+    },
+    {
+        "name": "Southern Textiles",
+        "address": "567 Tetuan Hwy, Zamboanga City",
+        "phone": "+63 62 987 6543",
+        "website": "https://www.southerntextiles.com",
+        "image": "southern_textiles_logo.png",
+        "membership_level": 1
+    },
+    {
+        "name": "Chavacano IT Solutions",
+        "address": "890 Pasonanca Rd, Zamboanga City",
+        "phone": "+63 62 654 3210",
+        "website": "https://www.chavacanoit.com",
+        "image": "chavacano_it_logo.png",
+        "membership_level": 3
+    }
+]

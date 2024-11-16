@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Directory Page</title>
+    <meta property="og:title" content="Chamber Directory page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="http://127.0.0.1:5500/chamber/directory.html">
+    <meta name="description" content="Directory page for Chamber of Commerce">
+    <meta name="author" content="Raphael De Sosa">
+    <link rel="stylesheet" href="styles/directory.css">
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+        <h1>ZC Chamber of Commerce</h1>
+        <button id="toggleView">Toggle View</button>
+        </div>
+    </header>
+    <nav>
+        <button id="myButton">=</button>
+        <ul class="menuLinks">
+            <li><a href="#" title="Home">Home</a></li>
+            <li class="current-menu-item"><a href="#">Directory</a></li>
+            <li><a href="#" title="Discover">Discover</a></li>
+            <li><a href="#" title="Join">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="cards" class="grid-view"></div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear">2024</span> Raphael De Sosa, Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>    
+</html>

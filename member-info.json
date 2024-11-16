@@ -1,0 +1,39 @@
+{
+    "family_name": "Martinez",
+    "move_in_date": "2024-9-15",
+    "number_of_people": 6,
+    "visited_by_Bishopric": true,
+    "family_members": [
+        {
+            "name:": "Arnold Martinez",
+            "gender": "Male",
+            "birthdate": "1985-5-28"
+        },
+        {
+            "name": "Mariel Martinez",
+            "gender": "Female",
+            "birthdate": "1987-3-07"
+        },
+        {
+            "name": "Jeanne Martinez",
+            "gender": "Female",
+            "birthdate": "2011-7-21"
+        },
+        {
+            "name": "Tommy Martinez",
+            "gender": "Male",
+            "birthdate": "2015-10-20"
+        },
+        {
+            "name": "Michael Martinez",
+            "gender": "Male",
+            "birthdate": "2019-3-05"
+        },
+        {
+            "name": "Angel Martinez",
+            "gender": "Female",
+            "birthdate": "2021-10-15"
+        }
+    ]
+    
+}
