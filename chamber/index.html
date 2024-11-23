@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Directory Page</title>
+    <meta property="og:title" content="Chamber Landing Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn4.vectorstock.com/i/1000x1000/47/68/zc-monogram-logo-vector-33144768.jpg">
+    <meta property="og:url" content="https://raphaeldesosa.github.io/wdd231/chamber/directory.html">
+    <meta name="description" content="Landing page for ZC Chamber of Commerce">
+    <meta name="author" content="Raphael De Sosa">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/ZC_logo.webp" alt="ZC-LOGO" width="80" height="80">
+            <h1>ZC Chamber of Commerce</h1>
+            <button id="toggleView">Toggle View</button>
+        </div>
+    </header>
+    <nav>
+        <button id="myButton">=</button>
+        <ul class="menuLinks">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#" title="Discover">Discover</a></li>
+            <li><a href="#" title="Join">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="hero">
+            <img src="" alt="hero-image" class="hero-image">
+            <div class="hero-content">
+                <h2>Welcome to ZC Chamber of Commerce</h2>
+                <a href="join.html" class="cta">Join Us!</a>
+            </div>
+        </section>
+
+        <section id="events">
+            <h2>Current Events</h2>
+            <div class="events-container">
+                <p>No events at the moment</p>
+            </div>
+        </section>
+
+        <section id="weather">
+            <h2>Current Weather</h2>
+            <div id="weather-info">
+                <p>Loading weather data</p>
+            </div>
+        </section>
+
+        <section id="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="cards" class="grid-view"></div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear">2024</span> Raphael De Sosa, Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>    
+</html>
