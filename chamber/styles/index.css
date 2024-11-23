@@ -29,6 +29,96 @@ header {
     margin-bottom: 10px;
 }
 
+.hero {
+    display: flex;
+    height: 300px;
+    background-color: #ddd;
+    margin: 0 auto;
+}
+
+.hero-image {
+    max-width: 70%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    left: 75%;
+    transform: translate(-40%);
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 60%;
+    text-align: left;
+    padding: 10px;
+}
+
+.hero-content h2 {
+    margin-bottom: 20px;
+    font-size: 10rem;
+    color: #2b3a4e;
+
+}
+
+.hero-content a {
+    color: #2b3a4e;
+    font-size: 2rem;
+    padding: 5px 10px;
+    background-color: lightgoldenrodyellow;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-content a:hover {
+    background-color: #ddd;
+}
+
+.cta {
+    bottom: 20px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+}
+
+.events-weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#events, #weather {
+   background-color: white;
+   padding: 20px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   min-height: 150px;
+}
+
+#spotlights {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+
 #cards.grid-view .card {
     display: inline-block;
     width: calc(33.33% - 20px);
@@ -106,6 +196,56 @@ footer p {
     header h1 {
         font-size: 1.2rem;
         margin-bottom: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .hero-image {
+        max-width: 90%;
+        height: auto;
+        object-fit: contain;
+        margin-bottom: 20px;
+        position: static;
+        left: auto;
+        transform: none;
+    }
+
+    .hero-content {
+        position: static;
+        width: 90%;
+        text-align: center;
+        top: auto;
+        left: auto;
+        right: auto;
+        padding: 0;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .hero-content a {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+    
+    .events-weather {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #spotlights {
+        margin-top: 20px;
     }
 
     #toggleView {
