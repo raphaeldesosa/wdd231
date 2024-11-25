@@ -93,11 +93,11 @@ main {
 
 .events-weather {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
 
-#events, #weather {
+#events, #weather, #weather-forecast {
    background-color: white;
    padding: 20px;
    border: 1px solid #ccc;

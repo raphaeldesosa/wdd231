@@ -70,6 +70,60 @@ async function displaySpotlights() {
 
 displaySpotlights();
 
+const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=6.92&lon=122.1&appid=1485d934b5f60a885a2d92b53d7daffb&units=metric';
+
+async function fetchForecast() {
+    try {
+        const response = await fetch(forecastUrl);
+        if(response.ok) {
+            const data = await response.json();
+            displayForecast(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch(error) {
+        console.log(error);
+    }
+}
+
+function displayForecast(data) {
+    const forecastContainer = document.getElementById('forecast-info');
+    forecastContainer.innerHTML = '';
+
+    const forecasts = {};
+    let dayCount = 0;
+
+    for (const forecast of data.list) {
+        if (dayCount >= 3) break;
+
+        const date = new Date(forecast.dt * 1000);
+        const day = date.toLocaleDateString('en-US', {weekday: 'long'});
+        const isToday = day === new Date().toLocaleDateString("en-US", {weekday: "long"});
+
+        const hour = date.getHours();
+        if (!forecasts[day] || hour === 12) {
+            forecasts[day] = { temp: forecast.main.temp, isToday};
+        }
+
+        if (Object.keys(forecasts).length > dayCount) {
+            dayCount++;
+        }
+    }
+
+    Object.entries(forecasts).forEach(([day, forecast]) => {
+        const displayDay = forecast.isToday ? 'Today' : day;
+        const temperature = forecast.temp.toFixed(0);
+
+        const forecastRow = document.createElement('p')
+        forecastRow.innerHTML = `<strong>${displayDay}:</strong> ${temperature} °C`;
+        forecastContainer.appendChild(forecastRow);
+    })
+}
+
+fetchForecast();
+
+
+
 function getMembershipLevel(level) {
     switch (level) {
         case 1: return "Member";
