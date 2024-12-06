@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Directory Page</title>
-    <meta property="og:title" content="Chamber Directory page">
+    <title>Chamber Join Us Page</title>
+    <meta property="og:title" content="Join Us Page">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://cdn4.vectorstock.com/i/1000x1000/47/68/zc-monogram-logo-vector-33144768.jpg">
     <meta property="og:url" content="https://raphaeldesosa.github.io/wdd231/chamber/directory.html">
-    <meta name="description" content="Directory page for Chamber of Commerce">
+    <meta name="description" content="Join Us page for ZC Chamber of Commerce">
     <meta name="author" content="Raphael De Sosa">
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/directory.css">
-    <script src="scripts/directory.js" defer></script>
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/thankyou.js" defer></script>
 </head>
 <body>
     <header>
@@ -26,14 +26,29 @@
         <button id="myButton">=</button>
         <ul class="menuLinks">
             <li><a href="index.html" title="Home">Home</a></li>
-            <li class="current-menu-item"><a href="#">Directory</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="#" title="Discover">Discover</a></li>
             <li><a href="Join.html" title="Join">Join</a></li>
         </ul>
     </nav>
     <main>
-        <div id="cards" class="grid-view"></div>
+        <section id="thank-you-container">
+            <h2>Thank You for Signing Up!</h2>
+            <p>We appreciate your interest and have received your information. Below is the information you submitted:</p>
+        
+            <div id="submission-details">
+                <p><strong>First Name:</strong> <span id="first-name"></span></p>
+                <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Mobile Number:</strong> <span id="mobile"></span></p>
+                <p><strong>Organization Name:</strong> <span id="organization"></span></p>
+                <p><strong>Timestamp:</strong> <span id="timestamp"></span></p>
+            </div>
+
+            <p>We will contact you soon.</p>
+        </section>
     </main>
+
     <footer>
         <p>©<span id="currentyear">2024</span> Raphael De Sosa, Philippines</p>
         <p id="lastModified"></p>

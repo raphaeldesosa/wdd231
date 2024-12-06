@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Join Us Page</title>
+    <meta property="og:title" content="Join Us Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn4.vectorstock.com/i/1000x1000/47/68/zc-monogram-logo-vector-33144768.jpg">
+    <meta property="og:url" content="https://raphaeldesosa.github.io/wdd231/chamber/directory.html">
+    <meta name="description" content="Join Us page for ZC Chamber of Commerce">
+    <meta name="author" content="Raphael De Sosa">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/ZC_logo.webp" alt="ZC-LOGO" width="80" height="80">
+            <h1>ZC Chamber of Commerce</h1>
+            <button id="toggleView">Toggle View</button>
+        </div>
+    </header>
+    <nav>
+        <button id="myButton">=</button>
+        <ul class="menuLinks">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#" title="Discover">Discover</a></li>
+            <li><a href="Join.html" title="Join">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="form-container">
+            <h2>Member Application Form</h2>
+            <form method="get" action="thanks.html">
+                <label for="firstName" title="Applicant's first name">
+                    First Name:
+                    <input type="text" id="firstName" name="firstName" required title="Enter your First Name" autocomplete="given-name">
+                </label>
+
+                <label for="lastName" title="Applicant's last name">
+                    Last Name:
+                    <input type="text" id="lastName" name="lastName" required title="Enter your Last Name" autocomplete="family-name">
+                </label>
+
+                <label for="orgTitle" title="Applicant's title in the organization">
+                    Organizational Title:
+                    <input type="text" id="orgTitle" name="orgTitle" pattern="[A-Za-z-\s]{7,}" title="Enter a valid title (letters, spaces, hyphens only, min. 7 characters)" autocomplete="organization-title">
+                </label>
+
+                <label for="email" title="Email Address">
+                    Email:
+                    <input type="email" id="email" name="email" required title="Enter your email address" autocomplete="email" placeholder="abc@gmail.com">
+                </label>
+
+                <label for="mobile" title="mobile phone number">
+                    Mobile Phone:
+                    <input type="tel" id="mobile"  name="mobile" required title="Enter your mobile phone number" autocomplete="tel">
+                </label>
+
+                <label for="organization" title="organization name">
+                    Organization Name:
+                    <input type="text" id="organization" name="organization" required title="Enter your organization name" autocomplete="organization">
+                </label>
+
+                <fieldset>
+                    <legend>Membership Level:</legend>
+                    <label>
+                        <input type="radio" name="Membership" value="NP-membership" required> NP Membership
+                    </label>
+                    <label>
+                        <input type="radio" name="Membership" value="Bronze Membership"> Bronze Membership
+                    </label>
+                    <label>
+                        <input type="radio" name="Membership" value="Silver Membership"> Silver Membership
+                    </label>
+                    <label>
+                        <input type="radio" name="Membership" value="Gold Membership"> Gold Membership
+                    </label>
+                </fieldset>
+
+                <label for="description" title="organization description">
+                    description:
+                    <textarea id="description" name="description" title="Provide a brief description of your organization"></textarea>
+                </label>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+                <button type="submit">Schedule an appointment</button>
+            </form>
+        </section>
+
+        <section id="membership-info">
+            <h3>Membership Levels</h3>
+            <div id="membership-links"></div>
+        </section>
+
+        <dialog id="npModal"></dialog>
+        <dialog id="bronzeModal"></dialog>
+        <dialog id="silverModal"></dialog>
+        <dialog id="goldModal"></dialog>
+
+    </main>    
+    <footer>
+        <p>©<span id="currentyear">2024</span> Raphael De Sosa, Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>    
+</html>
