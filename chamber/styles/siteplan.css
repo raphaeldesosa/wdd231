@@ -1,0 +1,47 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+h2 {
+    color: #004d00;
+    text-align: center;
+}
+
+section {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-position: inside;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#site-name {
+    background-color: lightyellow;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: lightyellow;
+    color: #004d00;
+}
+
+.wireframe {
+    background-color: #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+}
