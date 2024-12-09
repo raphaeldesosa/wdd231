@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Directory Page</title>
+    <meta property="og:title" content="Chamber Discover Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn4.vectorstock.com/i/1000x1000/47/68/zc-monogram-logo-vector-33144768.jpg">
+    <meta property="og:url" content="https://raphaeldesosa.github.io/wdd231/chamber/directory.html">
+    <meta name="description" content="Discover page for ZC Chamber of Commerce">
+    <meta name="author" content="Raphael De Sosa">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/discover.css">
+    <script src="scripts/discover.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/ZC_logo.webp" alt="ZC-LOGO" width="80" height="80">
+            <h1>ZC Chamber of Commerce</h1>
+            <button id="toggleView">Toggle View</button>
+        </div>
+    </header>
+    <nav>
+        <button id="myButton">=</button>
+        <ul class="menuLinks">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="discover.html" title="Discover">Discover</a></li>
+            <li><a href="join.html" title="Join">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="visitor-message"></section>
+        <section id="intro">
+            <h2>Discover ZC Chamber of Commerce!</h2>
+            <p>Explore events, attractions, and opportunities within ZC chamber of commerce community!</p>
+        </section>
+
+        <section id="highlights">
+            <h2>highlights</h2>
+            <div class="cards" id="event-cards">
+                <h3>Upcoming Events!</h3>
+                <p>Join us for networking events and workshops. Click below for details</p>
+            
+                <h2>Latest News</h2>
+                <ul id="news-list">
+                    <li>Local businesses are booming this year! <span class="date">(December 2024)</span></li>
+                    <li>Join our upccoming annual meeting. <span class="date">(January 2025)</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="top-attractions">
+            <h2>Top Attractions</h2>
+            <p>Discover the must see attractions our city has to offer! Explore breathtaking scenery, vibrant cultural spots and hidden gems.</p>
+            <div class="photos">
+               <figure>
+                   <img src="images/Sta-cruz-island.webp" alt="Sta Cruz Island" width="300" height="200" loading="hazy">
+                   <figcaption>Sta Cruz Island</figcaption>
+               </figure>
+               <figure>
+                   <img src="images/Merloquet-Falls.webp" alt="Merloquet Falls" width="300" height="200" loading="hazy">
+                   <figcaption>Merloquet Falls</figcaption>
+               </figure>
+               <figure>
+                   <img src="images/once-islas.webp" alt="Once islas" width="300" height="200" loading="hazy">
+                   <figcaption>Once Islas</figcaption>
+               </figure>
+               <figure>
+                   <img src="images/Barter-Trade.webp" alt="Barter Trade" width="300" height="200" loading="hazy">
+                   <figcaption>Barter Trade</figcaption>
+               </figure>
+               <figure>
+                   <img src="images/fort-pilar.webp" alt="Fort Pilar" width="300" height="200" loading="hazy">
+                   <figcaption>Fort Pilar</figcaption>
+               </figure>
+               <figure>
+                   <img src="images/Hermosa-festival.webp" alt="Hermosa Festival" width="300" height="200" loading="hazy">
+                   <figcaption>Hermosa Festival</figcaption>
+               </figure>
+            </div>
+       </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear">2024</span> Raphael De Sosa, Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>    
+</html>
