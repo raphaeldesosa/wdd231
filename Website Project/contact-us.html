@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong Lock Bricks Home Page</title>
+    <meta property="og:title" content="Bricks Contact Us Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://scontent.fmnl13-4.fna.fbcdn.net/v/t39.30808-6/393747176_783302153806710_2424915925732871577_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=bmALjFsp_noQ7kNvgGo_2-L&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=AHJNIwzXaLfIcgAGwOSNrs_&oh=00_AYCSYvCjl8OZGKM0PVB4V81AmcciSHMykZGQCKPmSeTgmg&oe=6765C3FF">
+    <meta property="og:url" content="https://raphaeldesosa.github.io/wdd231/chamber/directory.html">
+    <meta name="description" content="Strong-Lock Bricks contact us section where you can put your info and inquiry so that we can call you back.">
+    <meta name="author" content="Raphael De Sosa">
+    <link rel="icon" href="strong-lock-brick-logo1.ico">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/Strong-lock-bricks-logo.jpg" alt="ZC-LOGO" width="80" height="80">
+            <h1>Strong Lock Bricks</h1>
+        </div>
+    </header>
+    <nav>
+        <button id="myButton">=</button>
+        <ul class="menuLinks">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="about-us.html" title="About Us">About Us</a></li>
+            <li><a href="contact-us.html" title="Contact Us">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="contact-wrapper">
+            <section id="form-container">
+                <h2>Request A Call Back</h2>
+                <form method="get" action="request.html" class="form-grid">
+                    <label for="firstName" class="form-label" title="client first name">
+                        First Name:
+                        <input type="text" id="firstName" name="firstName" required title="Enter your first name" autocomplete="given-name">
+                    </label>
+
+                    <label for="lastName" class="form-label" title="client last name">
+                        Last Name:
+                        <input type="text" id="lastName" name="lastName" required title="Enter your last name" autocomplete="family-name">
+                    </label>
+
+                    <label for="email" class="form-label" title="Email Address">
+                        Email:
+                        <input type="email" id="email" name="email" required title="Enter your email address" autocomplete="email">
+                    </label>
+
+                    <label for="mobile" class="form-label" title="mobile number">
+                        Phone:
+                        <input type="tel" id="mobile" name="mobile" required title="Enter your mobile number" autocomplete="tel">
+                    </label>
+
+                    <label for="message" class="form-label" title="Your message">
+                        Message:
+                        <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
+                    </label>
+
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </section>
+
+            <section id="get-in">
+                <h2>Get in touch with Strong-Lock Bricks</h2>
+                <div class="contact-buttons">
+                    <a href="tel:09775852345" class="contact-btn">
+                        <span>📞</span> Zamboanga City: (062) 992-2534
+                    </a>
+                </div>
+
+                <div class="map-section">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253355.66889128118!2d121.98612176576327!3d7.162675450132307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32506a09d96fc175%3A0x35526ebbce01e7a2!2sZamboanga!5e0!3m2!1sen!2sph!4v1734452494271!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </div>    
+    </main>
+
+    <dialog id="confirmationModal">
+        <div class="modal-content">
+            <h2>Confirm Your Information</h2>
+            <p id="confirmationMessage">Are you sure you want to submit the following information?</p>
+
+            <div id="formSummary">
+
+            </div>
+            <div class="button-container">
+                <button id="confirmSubmit" class="modal-btn">Confirm</button>
+                <button id="cancelSubmit" class="modal-btn">Cancel</button>
+            </div>    
+        </div>
+    </dialog>
+    <footer>
+        <p>©<span id="currentyear">2024</span> Raphael De Sosa, Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>    
+</html>
