@@ -482,6 +482,10 @@ footer p {
     background-color: #f0a500;
 }
 
+dialog button {
+    position: static;
+}
+
 #get-in {
     background-color: #2b3a4e;
     color: white;
