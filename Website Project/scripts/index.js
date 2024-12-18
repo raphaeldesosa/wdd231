@@ -97,39 +97,44 @@ myButton.addEventListener('click', () => {
     menuLinks.classList.toggle('hidden')
 })
 
-/*const form = document.querySelector("form");
-form.addEventListener("submit", function (event) {
-    event.preventDefault();
+const container = document.getElementById("cards-container");
 
-    alert("Thank you for your message! We'll get back to you as soon as possible!")
+async function fetchBrickData() {
+    try {
+        const response = await fetch("data/bricks.json");
+        if (!response.ok) {
+            throw new Error("Failed to fetch Brick data");
+        }
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error("Error Loading JSON Data:", error);
+        return [];
+    }
+}
 
-    form.reset();
-})*/
+function renderCards(data) {
+    container.innerHTML = "";
 
+    data.forEach(brick => {
+        const card = document.createElement("div");
+        card.classList.add("card");
 
+        card.innerHTML = `
+        <h3>${brick.name}</h3>
+        <p><strong>Price:</strong> P ${brick.price}</p>
+        <p><strong>Category:</strong> ${brick.category}</p>
+        <p>${brick.description}</p>`;
 
-/*document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault();
+        container.appendChild(card);
+    });    
+}
 
-   
-    const firstName = document.getElementById('firstName').value;
-    const lastName = document.getElementById('lastName').value;
-    const email = document.getElementById('email').value;
-    const mobile = document.getElementById('mobile').value;
-    const message = document.getElementById('message').value;
-    const timestamp = new Date().toISOString();
+(async () => {
+    const brickData = await fetchBrickData();
+    renderCards(brickData);
+})();
 
-    
-    sessionStorage.setItem('firstName', firstName);
-    sessionStorage.setItem('lastName', lastName);
-    sessionStorage.setItem('email', email);
-    sessionStorage.setItem('mobile', mobile);
-    sessionStorage.setItem('message', message);
-    sessionStorage.setItem('timestamp', timestamp);
-
-    
-    window.location.href = 'request.html';
-});*/
 
 
 const form = document.querySelector("form");

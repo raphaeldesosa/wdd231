@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Fire Brick",
+        "price": 30,
+        "description": "A heat-resistant brick ideal for fireplaces and furnaces.",
+        "category": "Heat-Resistant Bricks"
+    },
+    {
+        "name": "Dutch Brick",
+        "price": 25,
+        "description": "A stylish, durable brick often used for decorative purposes.",
+        "category": "Decorative Bricks"
+    },
+    {
+        "name": "Engineering Bricks",
+        "price": 35,
+        "description": "Highly durable bricks known for their strength and water resistance.",
+        "category": "Structural Bricks"
+    },
+    {
+        "name": "Hollow Bricks",
+        "price": 28,
+        "description": "Lightweight bricks with hollow cores for insulation.",
+        "category": "Lightweight Bricks"
+    },
+    {
+        "name": "Cream City Brick",
+        "price": 32,
+        "description": "A unique cream-colored brick commonly used in historic buildings.",
+        "category": "Historic Bricks"
+    },
+    {
+        "name": "Burnt Clay Brick",
+        "price": 22,
+        "description": "Traditional clay bricks known for their strength and affordability.",
+        "category": "Traditional Bricks"
+    },
+    {
+        "name": "Acid Brick",
+        "price": 34,
+        "description": "Bricks resistant to acids, used in industrial settings.",
+        "category": "Specialty Bricks"
+    },
+    {
+        "name": "Sand Lime Brick",
+        "price": 26,
+        "description": "Bricks made of sand and lime, offering smooth finishes.",
+        "category": "Modern Bricks"
+    },
+    {
+        "name": "Jhama Brick",
+        "price": 23,
+        "description": "A hard, reddish brick often used for construction in India.",
+        "category": "Construction Bricks"
+    },
+    {
+        "name": "Concrete Brick",
+        "price": 29,
+        "description": "Durable bricks made of concrete for structural use.",
+        "category": "Structural Bricks"
+    },
+    {
+        "name": "London Stock Brick",
+        "price": 27,
+        "description": "Historic yellow bricks seen in London architecture.",
+        "category": "Historic Bricks"
+    },
+    {
+        "name": "Sun Dried Brick",
+        "price": 20,
+        "description": "Eco-friendly bricks dried naturally by the sun.",
+        "category": "Traditional Bricks"
+    },
+    {
+        "name": "Lakhori Brick",
+        "price": 24,
+        "description": "Small, thin bricks used in traditional Mughal architecture.",
+        "category": "Historic Bricks"
+    },
+    {
+        "name": "Nanak Shahi Bricks",
+        "price": 31,
+        "description": "Bricks used in historical Sikh architecture for their aesthetic appeal.",
+        "category": "Historic Bricks"
+    },
+    {
+        "name": "Porotherm Smart Bricks",
+        "price": 33,
+        "description": "Eco-friendly bricks designed for energy efficiency.",
+        "category": "Modern Bricks"
+    },
+    {
+        "name": "Fly Ash Brick",
+        "price": 21,
+        "description": "Made from fly ash, offering eco-friendly and durable properties.",
+        "category": "Eco-Friendly Bricks"
+    }
+]
